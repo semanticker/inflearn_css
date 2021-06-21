@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- css 따로 분리 -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- javascript 따로 분리 -->
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+	<a href="http://www.naver.com">go naver</a>
+
+	<!-- 안좋은 코드. 에러가 나면 네이버로 갈수 없음 -->
+	<a href="#" onclick="window.open('','','')">go naver</a>
+
+	<!-- CSS로 분리하지 않아 안좋은 코드 -->
+	<font><a href="#">go naver</a></font>
+	
+	<p><a href="http://www.naver.com">go naver</a></p>
+</body>
+</html>
