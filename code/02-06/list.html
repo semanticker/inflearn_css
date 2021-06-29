@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ul, ol, li, dl, dt, dd</title>
+</head>
+<body>
+	<ul>
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+		<li>Lorem ipsum dolor sit.</li>
+	</ul>
+
+	<ol type="a">
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+		<li>Lorem ipsum dolor sit.</li>
+	</ol>
+
+	<ul>
+		<li>
+			<a href="#">menu 1</a>
+			<ul>
+				<li><a href="#">submenu 1</a></li>
+				<li><a href="#">submenu 2</a></li>
+				<li><a href="#">submenu 3</a></li>
+				<li><a href="#">submenu 4</a></li>
+			</ul>
+		</li>
+		<li><a href="#">menu 2</a></li>
+		<li><a href="#">menu 3</a></li>
+		<li><a href="#">menu 4</a></li>
+	</ul>
+
+	<hr>
+
+	<dl>
+		<dt><strong>Lorem ipsum dolor, sit amet.</strong></dt>
+		<dd>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Illum aliquid saepe facilis nostrum doloremque autem, ipsam et necessitatibus a delectus at harum architecto assumenda. Inventore facilis rem, voluptatem explicabo quibusdam.</p>
+		</dd>
+		<dt><strong>Lorem ipsum dolor, sit amet.</strong></dt>
+		<dd>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Illum aliquid saepe facilis nostrum doloremque autem, ipsam et necessitatibus a delectus at harum architecto assumenda. Inventore facilis rem, voluptatem explicabo quibusdam.</p>
+		</dd>
+	</dl>
+
+	<dl>
+		<dt><strong>Lorem ipsum dolor, sit amet.</strong></dt>
+		<dd>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Illum aliquid saepe facilis nostrum doloremque autem, ipsam et necessitatibus a delectus at harum architecto assumenda. Inventore facilis rem, voluptatem explicabo quibusdam.</p>
+		</dd>
+		<dd>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus iure reprehenderit rem, nulla porro alias esse delectus repellendus repellat. Magni, odio. Vel aspernatur sunt et?</p>
+		</dd>
+	</dl>
+
+	<!-- 쓰면 안됨 -->
+	<dl>
+		<dt>menu 1</dt>
+		<dt>menu 2</dt>
+		<dt>menu 3</dt>
+		<dt>menu 4</dt>
+	</dl>
+
+	<!-- 가능하긴 하나 권장하지 않음 -->
+	<dl>
+		<dt>menu 1</dt>
+		<dd>
+			<ul>
+				<li><a href="#">submenu</a></li>
+				<li><a href="#">submenu</a></li>
+				<li><a href="#">submenu</a></li>
+			</ul>
+		</dd>
+	</dl>
+
+	<dl>
+		<dt>menu 2</dt>
+		<dd>
+			<ul>
+				<li><a href="#">submenu</a></li>
+				<li><a href="#">submenu</a></li>
+				<li><a href="#">submenu</a></li>
+			</ul>
+		</dd>
+	</dl>
+</body>
+</html>
