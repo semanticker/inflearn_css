@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>css selector</title>
+	<style>
+		body {
+			font-size: 12px;
+		}
+		h1, p {
+			text-decoration: underline;
+		}
+		p.lead {
+			color:  green;
+		}
+		#lead {
+			background-color: lime;
+		}
+		#header p {
+			border:  3px solid black;
+		}
+		#header p + p {
+			background-color: yellow;
+		}
+		.list li + li {
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header">
+		<h1>css <em>selector</em>selector</h1>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex numquam, minus ullam autem accusantium nam!</p>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex numquam, minus ullam autem accusantium nam!</p>
+	</div>
+	<div id="content">
+		<p id="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae!</p>
+		<p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam laudantium cumque quaerat placeat dolores dignissimos vitae earum tenetur libero ipsum dolorum vel at delectus saepe illo quia incidunt aperiam, consequatur neque iste unde cum sequi consequuntur id qui. Numquam commodi, dolor asperiores sed nostrum iste quisquam suscipit voluptates molestias magnam!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur neque nulla nam distinctio quae itaque, sequi repellendus. Excepturi, sunt!</p>
+		<ol class="list">
+			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
+			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
+			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
+			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
+			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
+		</ol>
+		<ul>
+			<li><a href="http://daum.net">daum</a></li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis.</li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis.</li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis.</li>
+			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis.</li>
+		</ul>
+		<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Quo odio aliquid sit explicabo eum, optio similique reprehenderit repellat laborum nam veritatis! Illo ipsam recusandae dolor cumque excepturi itaque, voluptates qui, quis ducimus, minus distinctio fuga?</p>
+	</div>
+	
+</div>
+
+</body>
+</html>
