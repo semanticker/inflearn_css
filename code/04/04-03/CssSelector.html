@@ -26,6 +26,27 @@
 		.list li + li {
 			background-color: lightblue;
 		}
+		a[title] {
+			background-color:  purple;
+			color: white;
+		}
+		/*a[href='http://daum.net'] {
+			background-color: black;
+			color:  yellow;
+		}*/
+		a[href^='http://'] {
+			background-color: black;
+			color:  yellow;
+		}
+		a[href$='.pdf'] {
+		    background-color: yellow;
+		}
+		li[title ~= 'text'] {
+			background-color: lime;
+		}
+		li[lang|="en"]{
+			border-bottom: 2px solid red;
+		}
 	</style>
 </head>
 <body>
@@ -41,18 +62,19 @@
 		<p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam laudantium cumque quaerat placeat dolores dignissimos vitae earum tenetur libero ipsum dolorum vel at delectus saepe illo quia incidunt aperiam, consequatur neque iste unde cum sequi consequuntur id qui. Numquam commodi, dolor asperiores sed nostrum iste quisquam suscipit voluptates molestias magnam!</p>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo pariatur neque nulla nam distinctio quae itaque, sequi repellendus. Excepturi, sunt!</p>
 		<ol class="list">
-			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
-			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
-			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
+			<li lang="en">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
+			<li lang="ko">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
+			<li lang="zh">Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
 			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
 			<li>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Maiores, necessitatibus.</li>
 		</ol>
 		<ul>
 			<li><a href="http://daum.net">daum</a></li>
-			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis.</li>
-			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis.</li>
-			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis.</li>
-			<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, corporis.</li>
+			<li><a href="http://naver.com">naver</a></li>
+			<li><a href="mailto:help@host.com" title="help mail">help</a></li>
+			<li><a href="file/download.pdf">download</a></li>
+			<li title="some text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, maxime.</li>
+
 		</ul>
 		<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Quo odio aliquid sit explicabo eum, optio similique reprehenderit repellat laborum nam veritatis! Illo ipsam recusandae dolor cumque excepturi itaque, voluptates qui, quis ducimus, minus distinctio fuga?</p>
 	</div>
