@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>css selector2</title>
+	<style>
+		/*a:link {
+			color: green;
+			text-decoration: underline;
+		}
+		a:visited {
+			color: gray;
+			text-decoration: underline;
+		}
+		a:hover {
+			color: red;
+			text-decoration: underline;
+		}
+		a:active {
+			color: orange;
+			text-decoration: underline;
+		}
+		a:focus {
+			background: red;
+		}*/
+		body {
+			color: #333;
+		}
+		a {
+			color:  #888;
+			text-decoration: none;
+		}
+		a:hover, a:active, a:focus {
+			color: red;
+			text-decoration: underline;
+		}
+		.lead:first-line {
+			background-color: lime;
+		}
+		.lead:first-letter {
+			font-size: 5em;
+		}
+		h1:before {
+			content: 'Before area '
+		}
+		h1:after {
+			content: 'After area '
+		}
+		div {
+			background-color: lime;
+		} /* type, 1 */
+		.sample {
+			background-color: green;
+		} /* class, 10 */
+		#sample {
+			background-color: purple;
+		} /* id, 100 */
+		div {
+			background-color: red !important;
+		} /* !important, 무조건 적용되는 값.
+	</style>
+</head>
+<body>
+	<h1>css selector</h1>
+	<p class="lead"><a href="http://www.naver.com">Naver</a>, amet consectetur adipisicing elit. Corporis ratione esse voluptas quos fugit necessitatibus incidunt, quia recusandae. Omnis, beatae. Magnam pariatur sint ut laboriosam quis veniam, officiis saepe suscipit. Earum ipsa hic nisi dolore, voluptates nihil explicabo dolorem, quos error dicta! Dolor, assumenda consequatur neque numquam iusto voluptate modi cupiditate et vitae voluptas, eveniet dicta hic saepe vel, fuga architecto sapiente aperiam aut, molestias non delectus molestiae consequuntur. Dolorum eligendi, corporis minus voluptatem a autem reiciendis architecto laudantium incidunt quae iste libero, modi eius error obcaecati. Doloremque, saepe blanditiis perferendis ea. <a href="#">Praesentium tempora</a>, rem sed aliquam alias molestiae iste? Inventore ab impedit laboriosam hic nulla saepe dolorem fugiat tenetur ut natus adipisci sapiente repellat voluptates illum eius, earum? Unde.</p>
+	<hr>
+	<div class="sample" id="sample" style="background-color: orange;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ex, similique, eaque, reiciendis est accusantium doloremque tempora non laborum quibusdam corporis consequatur culpa ducimus rerum? Aliquam, saepe officiis eveniet! Suscipit.</div>
+</body>
+</html>
