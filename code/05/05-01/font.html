@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>font / text</title>
+	<style>
+		body, h1, h2 {
+			/*font-family: '돋움', dotum, Helvetica, sans-serif;*/
+			font-family: 'Malgun Gothic', Helvetica, sans-serif;
+			font-size: 12px;
+		}
+		h1 {
+			background-color: green;
+			font-size: 2.4em;
+			letter-spacing: .1em;
+			text-transform: uppercase;
+			/* uppercase | lowercase | capitalize  */
+		}
+		h1 small {
+			background-color: lime;
+			font-size: .5em;
+			vertical-align: bottom;
+			/* top | middle | baseline | bottom */
+		}
+		h2 {
+			color:  #ff0000;
+			font-size: 2em;
+			font-variant: small-caps;
+			text-decoration: line-through;
+			/* underline | overline | line-through | none */
+		}
+		address {
+			font-style: normal;
+			/* normal | italic  | oblique */
+		}
+		.lead {
+			font-size: 1.2em;
+			font-weight: bold;
+			/* bold | bolder | 600 | 700 | 800 | 900 */
+			/* normal | lighter | 100 | 200 | 300 | 400 | 500 */
+			word-spacing: 1em;
+		}
+		.text {
+			text-indent:  1em;
+			text-align: left;
+			line-height: 1.6em;
+			/*white-space: nowrap;*/
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>style example <small>sample</small></h1>
+		<h2>Style Example (font-variant)</h2>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, deserunt!</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto neque assumenda consequatur suscipit minima maiores quasi omnis cumque officia repellat aut sint doloribus, eum eaque, tempora quo pariatur, qui adipisci.</p>
+
+		<p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos voluptatem corrupti similique officia consectetur reiciendis, quasi repudiandae vero! Quibusdam, quo autem expedita, esse, dolorem in officia, voluptatum similique numquam sed repudiandae. Assumenda ab voluptatem animi ad dolore, laboriosam dolorum saepe vitae nam a inventore dignissimos debitis suscipit reprehenderit. Quasi, officiis labore consequatur quae reprehenderit consectetur assumenda repellendus laborum repudiandae asperiores quidem omnis tempore ad deleniti, exercitationem saepe ullam. Recusandae, esse alias laudantium veritatis, ex, itaque minima nesciunt facilis deserunt adipisci tempora assumenda qui officiis molestiae sunt eveniet dignissimos, eius! Beatae quo quae quisquam, unde sunt magni minima! Eos, nihil cupiditate ipsa blanditiis iste ratione amet? Voluptatem facilis quia beatae repudiandae exercitationem dolore reprehenderit harum ex nobis sequi placeat temporibus culpa est soluta ipsam corporis delectus nesciunt assumenda quas laboriosam, quos fugit minus dolorum consequuntur. Placeat quidem repellat a, nesciunt sequi. Unde nisi quia illo quibusdam suscipit rerum ea, ratione, ipsum provident earum nam et dolorum similique aliquam accusamus dolore deleniti natus libero incidunt eum sint vitae blanditiis quas ipsa corporis? Quos ea mollitia quasi nobis ducimus labore aspernatur aliquam et qui quae eaque nemo culpa, sapiente reiciendis exercitationem ut fugit quo velit inventore modi. Rem quod laboriosam ipsum, veritatis dicta?</p>
+	</div>
+	<hr>
+	<address>add : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consequatur?</address>
+</body>
+</html>
