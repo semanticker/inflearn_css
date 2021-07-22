@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>word-break, white-space</title>
+	<style>
+		body {
+			font-family: 'Malgun Gothic', sans-serif;
+			font-size: 16px;
+		}
+		.content, .content2, .content3 {
+			width: 500px;
+			border:  3px solid black;
+		}
+		.content p {
+			word-break: break-all;
+		}
+		.content2 p {
+			text-align: justify;
+		}
+		.content3 p {
+			text-align: justify;
+			word-break: break-all;
+		}
+		/* white-space: nowrap | pre | pre-wrap | pre-line  */
+		.white1 {
+			width: 600px;
+			border: 2px solid black;
+			white-space: pre;	
+		}
+		.white2 {
+			width: 600px;
+			border: 2px solid black;
+			white-space: pre-wrap;	
+		}
+		.white3 {
+			width: 600px;
+			border: 2px solid black;
+			white-space: pre-line;	
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<p>Loremipsumdolorsitametconsecteturadipisicingelit.Illumsequiquascorporis,unde!Cumipsadoloribus,vel,accusantiumdeseruntoditfugitdoloreipsamet.Nostrumsuntillumestpariaturquisquamexpeditaobcaecatiamolestiasimpeditfugitharummolestiae,temporibuspossimus.</p>
+	</div>
+
+	<div class="content2">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Porro, earum, cumque. Amet nemo vel dolorem, ut repudiandae totam dignissimos voluptas assumenda. Nesciunt rem quibusdam quo magnam, adipisci, perferendis reprehenderit necessitatibus alias, doloribus, sapiente iure veniam! Officiis, ab nihil nemo quidem at est rerum tenetur esse fugiat unde optio provident id incidunt culpa autem, ratione, voluptas nisi reprehenderit atque molestiae enim? Dolorum quia, voluptatum, veritatis optio, doloremque, ut porro corrupti recusandae tempore nam dolorem nostrum labore? Distinctio reprehenderit repellendus error reiciendis provident dicta. Possimus necessitatibus incidunt, minima voluptates odio. Odio impedit laborum laudantium laboriosam repellat officiis nesciunt sunt, hic necessitatibus beatae debitis accusantium illo, numquam quos sint maxime voluptate dignissimos consequuntur reprehenderit. Enim ad sed eaque libero fuga quisquam quod ratione.</p>
+	</div>
+
+		<div class="content3">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Porro, earum, cumque. Amet nemo vel dolorem, ut repudiandae totam dignissimos voluptas assumenda. Nesciunt rem quibusdam quo magnam, adipisci, perferendis reprehenderit necessitatibus alias, doloribus, sapiente iure veniam! Officiis, ab nihil nemo quidem at est rerum tenetur esse fugiat unde optio provident id incidunt culpa autem, ratione, voluptas nisi reprehenderit atque molestiae enim? Dolorum quia, voluptatum, veritatis optio, doloremque, ut porro corrupti recusandae tempore nam dolorem nostrum labore? Distinctio reprehenderit repellendus error reiciendis provident dicta. Possimus necessitatibus incidunt, minima voluptates odio. Odio impedit laborum laudantium laboriosam repellat officiis nesciunt sunt, hic necessitatibus beatae debitis accusantium illo, numquam quos sint maxime voluptate dignissimos consequuntur reprehenderit. Enim ad sed eaque libero fuga quisquam quod ratione.</p>
+	</div>
+
+	<hr>
+
+	<div class="white1">
+		Lorem 
+		ipsum 
+		dolor sit amet consectetur 
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, expedita temporibus pariatur exercitationem porro in, perferendis beatae commodi consectetur qui optio mollitia laborum ea, nobis animi illum libero vero quas!
+	</div>
+
+	<div class="white2">
+		Lorem 
+		ipsum 
+		dolor sit amet consectetur 
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, expedita temporibus pariatur exercitationem porro in, perferendis beatae commodi consectetur qui optio mollitia laborum ea, nobis animi illum libero vero quas!
+	</div>
+	<div class="white3">
+		Lorem 
+		ipsum 
+		dolor sit amet consectetur 
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, expedita temporibus pariatur exercitationem porro in, perferendis beatae commodi consectetur qui optio mollitia laborum ea, nobis animi illum libero vero quas!
+	</div>
+</body>
+</html>
