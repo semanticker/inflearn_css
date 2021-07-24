@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>boxmodels</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.box {
+
+		display: inline-block;
+
+		margin: 20px;
+		padding: 20px;
+		/* top right bottom left */
+		/*padding-top: 20px;*/
+		/*padding: 100px;*/
+		/*padding: 100px 50px;*/ /* top bottom | right left */
+		/*padding: 100px 50px 10px;*/ /* top | right left | bottom */
+		/*padding: 100px 50px 10px 0;*/ /* top | right | left | bottom */
+		/*border-bottom: 5px solid black;*/
+		/*background-color: lime;*/
+		border: 5px solid black;
+		border-style: double;
+		background-color: lime;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam commodi, eos magni neque quis expedita eum architecto nobis sit ad libero, nemo, sint iusto alias doloremque nesciunt doloribus tenetur. Molestias?
+	</div>
+	<div class="box">
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam commodi, eos magni neque quis expedita eum architecto nobis sit ad libero, nemo, sint iusto alias doloremque nesciunt doloribus tenetur. Molestias?
+	</div>
+	<div class="box">
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam commodi, eos magni neque quis expedita eum architecto nobis sit ad libero, nemo, sint iusto alias doloremque nesciunt doloribus tenetur. Molestias?
+	</div>
+
+	<span class="box">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur natus, quaerat, sequi dolores est quia a, odit hic cum autem pariatur iure iusto eum vel non, sint iste eveniet ea.
+	</span>
+</body>
+</html>
