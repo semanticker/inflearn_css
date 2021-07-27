@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>float</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;	
+	}
+		body {
+			
+			font: 12px/1.6 'Malgun Gothic', sans-serif;
+			/*font:  weight style variant size/line-height family;*/
+			/*font:  size family;*/
+		}
+		img {
+			vertical-align: top;
+		}
+		.wrap {
+			width: 800px;
+			/* top-bottom, left-right */
+			margin: 0 auto;
+		}
+		.wrap h1 {
+			padding: 15px  0;
+		}
+		.wrap .thumb {
+			/* left | right | none */
+			float:  left;
+			border:  3px solid black;
+			/* 이미지와 텍스트 사이의 간격 */
+			margin:  15px 0 15px 0;
+		}
+		.wrap .text {
+			/* left | right | both  */
+			clear:  both;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<h1>float example</h1>
+		<p class="thumb"><img src="http://placehold.it/100x120?text=1" alt=""></p>
+		<p class="thumb"><img src="http://placehold.it/100x120?text=2" alt=""></p>
+		<p class="thumb"><img src="http://placehold.it/100x120?text=3" alt=""></p>
+		<p class="thumb"><img src="http://placehold.it/100x120?text=4" alt=""></p>
+		<div class="text">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique accusantium fuga beatae reprehenderit amet perspiciatis quisquam et temporibus cum! Nisi expedita amet commodi, ipsam, eveniet, neque laboriosam accusantium optio reprehenderit ut eaque perferendis. Adipisci quam nisi quaerat eveniet facere molestiae esse, voluptas sapiente, provident dolorem cumque voluptate quos culpa pariatur in. Cumque fuga, id non saepe odit voluptas, eveniet voluptatibus veniam aperiam doloremque magnam numquam cum perferendis voluptatem sit nulla magni impedit consectetur porro error laborum dolor facilis dolore harum. Unde ab, modi atque, libero maxime ipsam dolorum accusamus? Tempora temporibus sed, corporis eligendi ab quis, deserunt. Officia quaerat, commodi.</p>
+		</div>
+		
+		
+		
+
+	</div>
+	
+</body>
+</html>
