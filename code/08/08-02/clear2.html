@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>clear</title>
+	<style>
+		img {
+			vertical-align: top;
+		}
+		.area {
+			width:  800px;
+			overflow: hidden; /* 영역에서 넘치는 부분 */
+			margin:  0 auto;
+			border:  3px dashed red;
+			*zoom:  1;
+		}
+		/*.area:after {
+			content:  '';
+			display: block;
+			clear:  both;
+		}*/
+		.area .thumb {
+			float:  left;
+			border:  3px solid black;
+		}
+		.cls {
+			clear:  both;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="area">
+		<div class="thumb"><img src="http://placehold.it/100x120?text=1" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x120?text=2" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x120?text=3" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x120?text=4" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x120?text=5" alt=""></div>
+		<!-- clear 위치 -->
+	</div>
+
+	<p class="cls">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis laudantium, aspernatur, sed reiciendis iusto sint libero, beatae velit dolore obcaecati eveniet perspiciatis, provident odit harum iste. Repellendus quas velit nemo cum ab quam soluta, ipsum magni laborum? Iusto, repudiandae voluptate minima iure alias provident voluptatem esse architecto excepturi, non perferendis quaerat nihil et est deleniti temporibus veniam fugit magnam, laborum nulla inventore voluptatum enim. Non, nisi reiciendis eligendi nemo nostrum voluptatum perferendis totam soluta exercitationem sapiente minus nam similique ipsum, repellat aspernatur, neque eveniet modi magnam hic perspiciatis? Enim nostrum sunt ab omnis et beatae optio doloremque expedita aliquid fugiat.</p>
+	
+</body>
+</html>
