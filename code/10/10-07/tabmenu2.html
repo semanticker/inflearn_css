@@ -25,6 +25,7 @@
 		position: relative;
 		width: 500px;
 		/*margin: 30px 0;*/
+		height: 170px;
 	}
 	.tab_list li.m1,
 	.tab_list li.m2,
@@ -69,13 +70,34 @@
 	.tab_list li.m1 ul li,
 	.tab_list li.m2 ul li,
 	.tab_list li.m3 ul li {
+		/*overflow: hidden;*/
 		margin-bottom: 6px;
-		line-height: 1.5em;
+		padding-bottom: 4px;
+		border-bottom: 1px dashed #ddd;
+		line-height: 1.5;
+		*zoom: 1;
+	}
+	/* 공식처럼 사용하는 부분. overflow: hidden; 대응 */
+	.tab_list li.m1 ul li:after,
+	.tab_list li.m2 ul li:after,
+	.tab_list li.m3 ul li:after {
+		content: '';
+		display: block;
+		clear: both;
 	}
 	.tab_list li.m1 ul li a,
 	.tab_list li.m2 ul li a,
 	.tab_list li.m3 ul li a {
+		float: left;
 		color: #666;
+	}
+	.tab_list li.m1 ul li span,
+	.tab_list li.m2 ul li span,
+	.tab_list li.m3 ul li span {
+		float: right;
+		color: #666;
+		font-family: Verdana, sans-serif;
+		font-size: 11px;
 	}
 	.tab_list li.m1.active ul,
 	.tab_list li.m2.active ul,
@@ -112,37 +134,37 @@
 			<li class="m1">
 				<a href="#"><span>공지사항</span></a>
 				<ul>
-					<li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a></li>
-					<li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a></li>
-					<li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a></li>
+					<li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a> <span>2017-10-10</span></li>
+					<li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a> <span>2017-10-11</span></li>
+					<li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a> <span>2017-10-12</span></li>
 				</ul>
 				<p class="more"><a href="#">공지사항 더보기</a></p>
 			</li>
 			<li class="m2 active">
 				<a href="#"><span>보도자료</span></a>
 				<ul>
-					<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a></li>
-					<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a></li>
-					<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a></li>
-					<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a></li>
+					<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> <span>2017-10-13</span></li>
+					<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> <span>2017-10-14</span></li>
+					<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> <span>2017-10-15</span></li>
+					<li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> <span>2017-10-16</span></li>
 				</ul>
 				<p class="more"><a href="#">보도자료 더보기</a></p>
 			</li>
 			<li class="m3">
 				<a href="#"><span>해명자료</span></a>
 				<ul>
-					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
-					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
-					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
-					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
-					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
+					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-10-17</span></li>
+					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-10-18</span></li>
+					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-10-19</span></li>
+					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-10-20</span></li>
+					<li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-10-21</span></li>
 				</ul>
 				<p class="more"><a href="#">해명자료 더보기</a></p>
 			</li>
 		</ul>
 	</div>
 	<!-- //UI Object -->
-
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nisi ratione, modi officia atque cum voluptate hic nemo ea. At, id possimus, nam magnam sequi debitis earum commodi aliquid. Similique, quaerat corporis illo repellat quis dolor sed suscipit ad illum, assumenda nisi totam consequuntur numquam delectus unde eveniet laborum nemo eaque perspiciatis veritatis, libero? Sint commodi voluptas cum voluptatibus, eaque doloremque hic, ad adipisci a vero inventore omnis nostrum ratione labore aut impedit doloribus quis fugit amet repudiandae totam officia? Distinctio vel, labore ipsam quibusdam autem deserunt eaque dicta quod aliquid aut quo neque, natus, at laborum perferendis a nesciunt voluptate.</p>
 </div>
 </body>
 </html>
