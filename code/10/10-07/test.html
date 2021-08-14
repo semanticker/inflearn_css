@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+        .wrap div.row {
+            display: table-row;
+        }
+        .wrap div.row div.menu {
+            display: table-cell;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="row">
+        <div class="menu">a</div>
+        <div class="menu"><div>b</div></div>
+        <div class="menu"><div>c</div></div>
+        <div class="menu"><div>d</div></div>
+    </div>
+
+
+</div>
+<div class="test_body" style ="display:table;table-layout:fixed; word-break:break-all; width:100%; height:180px;background:skyblue">
+    <div style="display:table-row; ">
+        <div align=center style="display:table-cell; background:violet;" >
+
+            cell-1
+        </div>
+        <div align=center style="display:table-cell; background:orange;" >
+            <div class="test_content" style=" width:50px; height:50px; background:red" >No.2</div>
+            cell-2
+        </div>
+        <div align=center style="display:table-cell; background:pink;" >
+            <div class="test_content" style="width:50px; height:50px; background:yellow" >No.3</div>
+            cell-3
+        </div>
+    </div>
+    body
+</div>
+
+출처: https://kyome.tistory.com/98 [KYOME]
+</body>
+</html>
