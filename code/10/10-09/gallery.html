@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gallery list</title>
+    <style>
+    /* reset */
+    html,body{width:100%;height:100%}
+    body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+    body,input,textarea,select,button,table{font-family:'Malgun Gothic',Dotum,AppleGothic,sans-serif;font-size:12px}
+    img,fieldset{border:0}
+    img{vertical-align:top}
+    ul,ol{list-style:none}
+    em,address{font-style:normal}
+    a{text-decoration:none}
+    a:hover,a:active,a:focus{text-decoration:underline}
+
+    /* style */
+    #content {
+        width: 800px;
+        margin: 0 auto;
+    }
+    #content h1 {
+        padding: 15px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    #content .fixed_img_col {
+
+    }
+    #content .fixed_img_col ul {
+
+    }
+    #content .fixed_img_col li {
+        float: left;
+        width: 120px;
+        height: 200px;
+        padding: 20px 15px 0 15px;
+    }
+    #content .fixed_img_col li a {
+        display: block;
+
+    }
+    /*#content .fixed_img_col li a:hover {*/
+    /*    display: block;*/
+
+    /*}*/
+    #content .fixed_img_col li a .thumb {
+        display: block;
+        position: relative;
+    }
+    #content .fixed_img_col li a .thumb img{
+
+    }
+    #content .fixed_img_col li a .thumb em{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        font-family: Verdana,sans-serif;
+        font-weight: bold;
+        text-align: center;
+        line-height: 120px;
+    }
+    #content .fixed_img_col li a strong {
+
+    }
+    #content .fixed_img_col li p {
+
+    }
+    </style>
+</head>
+<body>
+<div id="content">
+    <!-- UI Object -->
+    <h1>Fixed Image+Text Col List</h1>
+    <div class="fixed_img_col">
+        <ul>
+            <li>
+                <a href="#">
+					<span class="thumb">
+						<img src="img/@thumbSquare.jpg" alt="">
+						<em>Category</em>
+					</span>
+                    <strong>이미지 제목</strong>
+                </a>
+                <p>2010-12-24</p>
+            </li>
+            <li>
+                <a href="#"><span class="thumb"><img src="img/@thumbSquare.jpg" alt=""> <em>Category</em></span> <strong>이미지 제목 이미지 제목 이미지 제목</strong></a>
+                <p>2010-12-24</p>
+            </li>
+            <li>
+                <a href="#"><span class="thumb"><img src="img/@thumbSquare.jpg" alt=""> <em>Category</em></span> <strong>이미지 제목</strong></a>
+                <p>2010-12-24</p>
+            </li>
+            <li>
+                <a href="#"><span class="thumb"><img src="img/@thumbSquare.jpg" alt=""> <em>Category</em></span> <strong>이미지 제목</strong></a>
+                <p>2010-12-24</p>
+            </li>
+            <li>
+                <a href="#"><span class="thumb"><img src="img/@thumbSquare.jpg" alt=""> <em>Category</em></span> <strong>이미지 제목</strong></a>
+                <p>2010-12-24</p>
+            </li>
+            <li>
+                <a href="#"><span class="thumb"><img src="img/@thumbSquare.jpg" alt=""> <em>Category</em></span> <strong>이미지 제목</strong></a>
+                <p>2010-12-24</p>
+            </li>
+            <li>
+                <a href="#"><span class="thumb"><img src="img/@thumbSquare.jpg" alt=""> <em>Category</em></span> <strong>이미지 제목</strong></a>
+                <p>2010-12-24</p>
+            </li>
+            <li>
+                <a href="#"><span class="thumb"><img src="img/@thumbSquare.jpg" alt=""> <em>Category</em></span> <strong>이미지 제목</strong></a>
+                <p>2010-12-24</p>
+            </li>
+            <li>
+                <a href="#"><span class="thumb"><img src="img/@thumbSquare.jpg" alt=""> <em>Category</em></span> <strong>이미지 제목</strong></a>
+                <p>2010-12-24</p>
+            </li>
+            <li>
+                <a href="#">
+					<span class="thumb">
+						No Images
+						<em>Category</em>
+					</span>
+                    <strong>이미지 제목</strong>
+                </a>
+                <p>2010-12-24</p>
+            </li>
+        </ul>
+    </div>
+    <!-- //UI Object -->
+</div>
+
+</body>
+</html>
