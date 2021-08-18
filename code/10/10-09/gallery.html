@@ -17,7 +17,7 @@
 
     /* style */
     #content {
-        width: 800px;
+        width: 900px;
         margin: 0 auto;
     }
     #content h1 {
@@ -28,16 +28,29 @@
 
     }
     #content .fixed_img_col ul {
-
+        border-bottom: 1px solid #ccc;
+        *zoom: 1;
+    }
+    #content .fixed_img_col ul:after {
+        content: '';
+        display: block;
+        clear: both;
     }
     #content .fixed_img_col li {
+        position: relative;
         float: left;
+        top: 1px;
         width: 120px;
-        height: 200px;
+        height: 190px;
+        border-bottom: 1px solid #ccc;
         padding: 20px 15px 0 15px;
+        /*margin-top:  -1px;*/
+        /*margin-bottom:  -1px;*/
     }
     #content .fixed_img_col li a {
         display: block;
+        color: #333;
+        text-decoration: none;
 
     }
     /*#content .fixed_img_col li a:hover {*/
@@ -47,11 +60,16 @@
     #content .fixed_img_col li a .thumb {
         display: block;
         position: relative;
+        background-color: #ededed;
+        text-align: center;
+        line-height: 120px;
     }
-    #content .fixed_img_col li a .thumb img{
+    #content .fixed_img_col li a .thumb img {
 
     }
-    #content .fixed_img_col li a .thumb em{
+    #content .fixed_img_col li a .thumb em {
+        display: none;
+        opacity: .6;
         position: absolute;
         left: 0;
         top: 0;
@@ -60,14 +78,23 @@
         color: #fff;
         font-family: Verdana,sans-serif;
         font-weight: bold;
-        text-align: center;
-        line-height: 120px;
+
+    }
+    #content .fixed_img_col li a:hover .thumb em {
+        display: block;
     }
     #content .fixed_img_col li a strong {
+        display: block;
+        padding: 6px 0 2px;
+        line-height: 1.4;
 
     }
+    #content .fixed_img_col li a:hover strong {
+        text-decoration: underline;
+    }
     #content .fixed_img_col li p {
-
+        color: #666;
+        font-size: .9em;
     }
     </style>
 </head>
@@ -132,6 +159,9 @@
         </ul>
     </div>
     <!-- //UI Object -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore facilis harum nemo nulla obcaecati perferendis
+        quaerat quia, voluptatem! Consectetur cupiditate eligendi expedita ipsam laborum perspiciatis, possimus quaerat
+        quas vel veritatis.</p>
 </div>
 
 </body>
