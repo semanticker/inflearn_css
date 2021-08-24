@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>example</title>
+    <style>
+    /* reset */
+    html,body {width: 100%; height: 100%}
+    body,ul,li {margin: 0; padding: 0}
+    body {font-family: 'Malgun Gothic', '맑은 고딕', Dotum, AppleGothic, sans-serif; font-size: 12px;}
+    li {list-style: none}
+    em {font-style: normal}
+    img {vertical-align: top}
+    a {text-decoration: none}
+    a:hover,a:focus {text-decoration: underline}
+
+    /** style */
+    #content {
+        width: 990px;
+        margin: 0 auto;
+    }
+    .car_gallery {}
+    .car_gallery ul {}
+    .car_gallery li {
+        float: left;
+        width: 192px;
+        margin: 17px 17px 0 0;
+        color: #222;
+    }
+    .car_gallery li a {
+        color: inherit;
+    }
+    .car_gallery li a .thumb {}
+    .car_gallery li a .thumb img {
+        width: 100%;
+    }
+    .car_gallery li a .txt {
+        display: block;
+        margin-top: 5px;
+        line-height: 18px;
+    }
+    .car_gallery li a .ico {}
+
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <div class="car_gallery">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="thumb">
+                        <img src="img/thumb1.jpg" alt="횡단보도 정지선의 비밀..독일과 한국 뭐가 다른가">
+                    </span>
+                    <em class="txt">횡단보도 정지선의 비밀..독일과 한국 뭐가 다른가</em>
+                    <span class="ico">동영상</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="thumb">
+                        <img src="img/thumb2.jpg" alt="슈퍼카 씹어먹는 최강의 슈퍼밴 베스트 5">
+                    </span>
+                    <em class="txt">슈퍼카 씹어먹는 최강의 슈퍼밴 베스트 5</em>
+                    <span class="ico">사진</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="thumb">
+                        <img src="img/thumb3.jpg" alt="BMW의 누더기 전기차 'LOVOS'">
+                    </span>
+                    <em class="txt">BMW의 누더기 전기차 'LOVOS'</em>
+                    <span class="ico">사진</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="thumb">
+                        <img src="img/thumb4.jpg" alt="쉽게 즐길 수 있는 전천후 모터사이클, G 310 GS">
+                    </span>
+                    <em class="txt">쉽게 즐길 수 있는 전천후 모터사이클, G 310 GS</em>
+                    <span class="ico">사진</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
