@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+    /* reset */
+    body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+    body,input,textarea,select,button,table{font-family:'Malgun Gothic','돋움',Dotum,AppleGothic,sans-serif;font-size:12px}
+    img,fieldset{border:0}
+    img{vertical-align:top}
+    ul,ol{list-style:none}
+    em,address{font-style:normal}
+    a{text-decoration:none}
+    a:hover,a:active,a:focus{text-decoration:underline}
+    legend,.blind{display:block;position:absolute;left:0;top:-9999em;overflow:hidden}
+
+    /* style */
+    </style>
+</head>
+<body>
+<div class="login">
+    <form action="#" method="post">
+        <fieldset>
+            <legend>로그인</legend>
+            <p class="field">
+                <label for="user_id" class="blind">ID</label>
+                <input type="text" id="user_id" name="user_id" value="" placeholder="ID" class="inp_field">
+            </p>
+            <p class="field">
+                <label for="user_pw" class="blind">PASSWORD</label>
+                <input type="password" id="user_pw" name="user_pw" value="" placeholder="PASSWORD" class="inp_field">
+            </p>
+            <div class="area">
+                <p class="chk_field">
+                    <input type="checkbox" id="stay" name="stay" value="">
+                    <label for="stay">로그인유지</label>
+                </p>
+                <p class="btn_area">
+                    <button type="submit" class="btn_submit"><span>로그인</span></button>
+                </p>
+            </div>
+        </fieldset>
+        <div class="nav">
+            <ul>
+                <li><a href="#">아이디/비밀번호 찾기</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li class="last"><a href="#">Open ID</a></li>
+            </ul>
+        </div>
+    </form>
+    <p class="btn_close"><button type="button">X</button></p>
+</div>
+</body>
+</html>
