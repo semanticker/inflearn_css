@@ -13,12 +13,68 @@
     em,address{font-style:normal}
     a{text-decoration:none}
     a:hover,a:active,a:focus{text-decoration:underline}
-    legend,.blind{display:block;position:absolute;left:0;top:-9999em;overflow:hidden}
+    legend, .blind {display: block;position: absolute;left: 0;top: -999em;overflow: hidden;}
 
     /* style */
+    .login {
+        width: 384px;
+        margin: 20px auto;
+        border: 2px solid #555;
+    }
+    .login fieldset {
+        padding: 28px 28px 10px;
+    }
+    .login fieldset .field {
+        margin-bottom: 5px;
+    }
+    .login fieldset .field .inp_field {
+        width: 326px;
+        height: 28px;
+        border: 1px solid #b7b7b7;
+        border-color: #b7b7b7 #e1e1e1 #e1e1e1 #b7b7b7;
+        color: #767676;
+        font: bold 11px/28px Verdana, Tahoma, sans-serif;
+        text-indent: 9px;
+    }
+    .login fieldset .area:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .login fieldset .chk_field {
+        float: left;
+        color: #767676;
+        font: 11px '돋움', Dotum, Helvetica, sans-serif;
+    }
+    .login fieldset .chk_field input {
+        vertical-align: middle;
+    }
+    .login fieldset .btn_area {
+        float: right;
+
+    }
+    .login fieldset .btn_area .btn_submit {
+        background: none;
+        border: 0 none;
+        padding-left: 40px;
+        background: url("img/btn_login.gif") no-repeat 0 0;
+        cursor: pointer;
+    }
+    .login fieldset .btn_area .btn_submit span {
+        display: block;
+        position: relative;
+        right: -2px;
+        height: 32px;
+        padding-right: 20px;
+        background: url("img/btn_login.gif") no-repeat 100% 0;
+        color: #fff;
+        font-weight: bold;
+        line-height: 32px;
+    }
     </style>
 </head>
 <body>
+
 <div class="login">
     <form action="#" method="post">
         <fieldset>
@@ -28,13 +84,13 @@
                 <input type="text" id="user_id" name="user_id" value="" placeholder="ID" class="inp_field">
             </p>
             <p class="field">
-                <label for="user_pw" class="blind">PASSWORD</label>
+                <label for="user_pw"class="blind">PASSWORD</label>
                 <input type="password" id="user_pw" name="user_pw" value="" placeholder="PASSWORD" class="inp_field">
             </p>
             <div class="area">
                 <p class="chk_field">
-                    <input type="checkbox" id="stay" name="stay" value="">
-                    <label for="stay">로그인유지</label>
+                    <input type="checkbox" id="stay" name="" value="">
+                    <label for="stay">로그인 유지</label>
                 </p>
                 <p class="btn_area">
                     <button type="submit" class="btn_submit"><span>로그인</span></button>
@@ -43,13 +99,46 @@
         </fieldset>
         <div class="nav">
             <ul>
-                <li><a href="#">아이디/비밀번호 찾기</a></li>
+                <li><a href="#">아이디/비밀번호찾기</a></li>
                 <li><a href="#">회원가입</a></li>
-                <li class="last"><a href="#">Open ID</a></li>
+                <li><a href="#">Open ID</a></li>
             </ul>
         </div>
     </form>
     <p class="btn_close"><button type="button">X</button></p>
 </div>
+
+<!--<div class="login">-->
+<!--    <form action="#" method="post">-->
+<!--        <fieldset>-->
+<!--            <legend>로그인</legend>-->
+<!--            <p class="field">-->
+<!--                <label for="user_id" class="blind">ID</label>-->
+<!--                <input type="text" id="user_id" name="user_id" value="" placeholder="ID" class="inp_field">-->
+<!--            </p>-->
+<!--            <p class="field">-->
+<!--                <label for="user_pw" class="blind">PASSWORD</label>-->
+<!--                <input type="password" id="user_pw" name="user_pw" value="" placeholder="PASSWORD" class="inp_field">-->
+<!--            </p>-->
+<!--            <div class="area">-->
+<!--                <p class="chk_field">-->
+<!--                    <input type="checkbox" id="stay" name="stay" value="">-->
+<!--                    <label for="stay">로그인유지</label>-->
+<!--                </p>-->
+<!--                <p class="btn_area">-->
+<!--                    <button type="submit" class="btn_submit"><span>로그인</span></button>-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </fieldset>-->
+<!--        <div class="nav">-->
+<!--            <ul>-->
+<!--                <li><a href="#">아이디/비밀번호 찾기</a></li>-->
+<!--                <li><a href="#">회원가입</a></li>-->
+<!--                <li class="last"><a href="#">Open ID</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </form>-->
+<!--    <p class="btn_close"><button type="button">X</button></p>-->
+<!--</div>-->
 </body>
 </html>
