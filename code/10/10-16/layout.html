@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>layout, 2column</title>
+    <style>
+    /* reset */
+    body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+    body,input,textarea,select,button,table{font-family:'Malgun Gothic','돋움',Dotum,AppleGothic,sans-serif;font-size:12px}
+    img,fieldset{border:0}
+    img{vertical-align:top}
+    ul,ol{list-style:none}
+    em,address{font-style:normal}
+    a{text-decoration:none}
+    a:hover,a:active,a:focus{text-decoration:underline}
+
+    /* layout */
+    #wrap {
+        width: 970px;
+        margin: 0 auto;
+        background-color: gray;
+    }
+    #header {
+        padding: 20px;
+        background-color: red;
+    }
+    #container {
+        padding-bottom: 30px;
+        *zoom:1;
+        background-color: lime;
+    }
+    #container:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    #container #content {
+        float: right;
+        width: 600px;
+        background-color: blue;
+    }
+    #container #content .inn {
+        padding: 20px;
+    }
+    #container .aside {
+        float: left;
+        width: 370px;
+        background-color: green;
+    }
+    #container .aside .inn {
+        padding: 20px;
+    }
+    #footer {
+        padding: 20px;
+        background-color: silver;
+    }
+
+    #header h1 {}
+    #header p {}
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <!-- header -->
+    <div id="header">
+        <h1>LOG</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur cumque cupiditate distinctio
+            exercitationem inventore, maxime, minima minus quibusdam quis, sit sunt! Dolore eaque eum id laborum modi
+            molestias sapiente?</p>
+    </div>
+    <!-- //header -->
+    <!-- container -->
+    <div id="container">
+        <!-- content -->
+        <div id="content">
+            <div class="inn">
+                <h2>Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae consequuntur deleniti dicta
+                    eligendi eum impedit magni modi mollitia nam pariatur porro possimus quibusdam, repellendus sunt vero
+                    eligendi eum impedit magni modi mollitia nam pariatur porro possimus quibusdam, repellendus sunt vero
+                    eligendi eum impedit magni modi mollitia nam pariatur porro possimus quibusdam, repellendus sunt vero
+                    vitae? Ad, nostrum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae consequuntur deleniti dicta
+                    eligendi eum impedit magni modi mollitia nam pariatur porro possimus quibusdam, repellendus sunt vero
+                    eligendi eum impedit magni modi mollitia nam pariatur porro possimus quibusdam, repellendus sunt vero
+                    vitae? Ad, nostrum.</p>
+            </div>
+        </div>
+        <!-- //content -->
+        <!-- aside -->
+        <div class="aside">
+            <div class="inn">
+                <h2>Aside</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem consectetur corporis debitis
+                    distinctio, exercitationem, explicabo illum optio quam sint tempora tempore totam vitae? Eius harum
+                    magni molestiae nemo ut?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem consectetur corporis dolores et
+                    eveniet modi possimus quae saepe voluptatum? Animi architecto dolorem dolores mollitia nihil, quis rem
+                    unde velit.</p>
+            </div>
+
+        </div>
+        <!-- //aside -->
+    </div>
+    <!-- //container -->
+    <!-- footer -->
+    <div id="footer">
+        <address>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</address>
+        <p>Copyright &copy;</p>
+    </div>
+    <!-- //footer -->
+
+</div>
+</body>
+</html>
