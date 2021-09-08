@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* reset */
+html,body,dl,dt,dd,h1,h2,ul,li,p,address {margin: 0; padding: 0}
+body,h1,h2 {font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 12px}
+li {list-style: none}
+img {border: 0}
+hr {display: none}
+.blind {display: block; position: absolute; left: 0; top: -9999em;}
