@@ -5,6 +5,7 @@ body,h1,h2 {font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-si
 li {list-style: none}
 img, fieldset {border: 0}
 img {vertical-align: top}
+address,em {font-style: normal}
 hr {display: none}
 .blind {display: block; position: absolute; left: 0; top: -9999em;}
 .skip-nav a {display: block; position:absolute; left: 0; top: -9999em; z-index:9999; width:100%; background-color: navy; color:#eee; text-align: center; line-height: 2.4em}
@@ -26,14 +27,24 @@ hr {display: none}
 #header .lnb li a.on:hover {background-position: 0 -100px;}
 #header .lnb:after {content: '';display: block; clear: both;}
 
-#container {*zoom:1}
-#container #content {float: left; width: 63%}
+#container {padding-bottom: 20px; *zoom:1}
+#container #content {float: left; width: 63%; color: #666; line-height: 1.3}
 #container #content .inner {padding: 25px 25px 0}
 #container #content h2,
 #container #content p,
-#container #content address {margin-bottom: 15px}
+#container #content address {margin-bottom: 12px}
 #container #content address p {margin-bottom: 0}
 
-#container #aside {float: right; width: 37%}
+#container #aside {float: right; width: 37%; color: #666; line-height: 1.3}
 #container #aside .inner {padding: 25px 25px 0 0}
 #container:after {content: ''; display: block; clear: both;}
+
+#footer {border-top: 1px solid #ccc; padding: 25px 25px 35px; color: #999; font-size: .9em; line-height: 1.8; *zoom: 1}
+#footer a {color: #aaa; text-decoration: none}
+#footer a:hover {color: brown}
+#footer:after {content: ''; display: block; clear: both}
+#footer .btm_menu {float: right}
+#footer .btm_menu dd {display: inline}
+#footer .copy {float: left}
+
+
