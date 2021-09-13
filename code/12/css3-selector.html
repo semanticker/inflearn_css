@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charsest="UTF-8">
+    <title>CSS3 elector</title>
+    <style>
+    body {font: 12px 'Trebuchet MS', sans-serif }
+    .wrap h1 ~ p {background-color: lime}
+    .wrap a[href ^= "http"] { background-color: orange}
+    .wrap a[href ^= "mail"] { background-color: lightblue}
+    .wrap a[href $= "pdf"] { background-color: lightcoral}
+    .wrap a[title *= "이동"] { color: red}
+    .wrap p:empty {border-bottom: 1px solid green}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>css selector</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, at blanditiis consequatur consequuntur dolores est excepturi facilis illo molestias obcaecati praesentium quia quidem sed vero, vitae. Consequuntur esse nisi nobis optio sed voluptate voluptatum. Ad aliquid animi asperiores autem dolores enim eum, hic impedit ipsa itaque magnam minima minus necessitatibus neque nobis placeat quae quas repellat sed, soluta tempora tenetur ullam voluptates. Ad architecto, commodi deserunt doloremque ducimus impedit iste nostrum odio pariatur quibusdam ratione reiciendis soluta tempora veritatis, voluptates. Accusantium ad, aperiam architecto consectetur, consequatur culpa dignissimos doloribus eius, esse et fugiat harum ipsam libero nihil quaerat qui ratione rem reprehenderit sed voluptatibus? Amet, aperiam cum doloremque esse est, fugit harum hic id illo in ipsum maiores nemo non officia optio possimus quae quaerat quibusdam quo reprehenderit sequi soluta sunt tempora unde vel voluptates voluptatibus. Accusamus adipisci aliquam asperiores assumenda consectetur culpa cupiditate dicta distinctio dolore eos et ex exercitationem facere fuga id illum inventore laborum libero minus nam nesciunt, officiis optio provident quis reiciendis repellat repellendus sapiente sed sequi sit soluta vel veniam, vero! Exercitationem expedita officiis temporibus. Alias aut autem consequuntur dolor est, illo libero necessitatibus odit officia, pariatur, perferendis possimus quidem sunt. Illum ipsam numquam perspiciatis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, at blanditiis consequatur consequuntur dolores est excepturi facilis illo molestias obcaecati praesentium quia quidem sed vero, vitae. Consequuntur esse nisi nobis optio sed voluptate voluptatum. Ad aliquid animi asperiores autem dolores enim eum, hic impedit ipsa itaque magnam minima minus necessitatibus neque nobis placeat quae quas repellat sed, soluta tempora tenetur ullam voluptates. Ad architecto, commodi deserunt doloremque ducimus impedit iste nostrum odio pariatur quibusdam ratione reiciendis soluta tempora veritatis, voluptates. Accusantium ad, aperiam architecto consectetur, consequatur culpa dignissimos doloribus eius, esse et fugiat harum ipsam libero nihil quaerat qui ratione rem reprehenderit sed voluptatibus? Amet, aperiam cum doloremque esse est, fugit harum hic id illo in ipsum maiores nemo non officia optio possimus quae quaerat quibusdam quo reprehenderit sequi soluta sunt tempora unde vel voluptates voluptatibus. Accusamus adipisci aliquam asperiores assumenda consectetur culpa cupiditate dicta distinctio dolore eos et ex exercitationem facere fuga id illum inventore laborum libero minus nam nesciunt, officiis optio provident quis reiciendis repellat repellendus sapiente sed sequi sit soluta vel veniam, vero! Exercitationem expedita officiis temporibus. Alias aut autem consequuntur dolor est, illo libero necessitatibus odit officia, pariatur, perferendis possimus quidem sunt. Illum ipsam numquam perspiciatis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolorum earum eos est et eveniet facilis id iste laudantium magnam, minima modi obcaecati praesentium rem tempore, tenetur ut veritatis voluptate!</p>
+        <ul>
+            <li><a href="http://naver.com" title="네이버로 이동">naver</a></li>
+            <li><a href="http://daum.net" title="다음으로 이동">daum</a></li>
+            <li><a href="mailto:webazit@naver.com">mailing</a></li>
+            <li><a href="download/sample.pdf" title="pdf파일 다운로드">download</a></li>
+        </ul>
+        <p></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur, corporis dolor doloremque dolorum ea eaque excepturi expedita fuga, ipsa ipsam modi non omnis pariatur porro quam recusandae sequi vero!</p>
+    </div>
+</body>
+</html>
