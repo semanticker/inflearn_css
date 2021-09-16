@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text-overflow</title>
+    <style>
+    /*
+        selector {
+            -webkit-attribute: value;   Chrome, Safari
+            -moz-attribute : value;     Firefox;
+            -ms-attribute: value;       IE, Outlook
+            -o-attribute:               Opera
+            attribute: value;
+        }
+    */
+    #wrap {
+        width: 600px;
+        padding: 20px;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-width: 0 1px;
+        font: 12px Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .sample {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p class="sample">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aliquid, deleniti dolor eaque eius est
+            excepturi impedit iste itaque iusto labore natus nemo quas quasi repudiandae tempore ullam voluptates.</p>
+        <span class="sample">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aperiam consequuntur, culpa cupiditate delectus eum illum iste itaque iusto labore magnam necessitatibus nesciunt pariatur qui quia quod recusandae sint veniam.</span>
+    </div>
+</body>
+</html>
