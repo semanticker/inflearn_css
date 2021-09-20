@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background</title>
+    <style>
+    body {
+        font: 12px 'Malgun Gothic', sans-serif;
+    }
+    .box-r {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        /*border: 5px solid #000;*/
+        background: rgb(255,255,255);
+        background: -moz-radial-gradient(30% 30%, ellipse cover,  rgba(255,255,255,1) 0%, rgba(14,14,14,1) 86%, rgba(14,14,14,1) 100%, rgba(112,112,112,1) 100%);
+        background: -webkit-radial-gradient(30% 30%, ellipse cover,  rgba(255,255,255,1) 0%,rgba(14,14,14,1) 86%,rgba(14,14,14,1) 100%,rgba(112,112,112,1) 100%);
+        background: radial-gradient(ellipse at 30% 30%,  rgba(255,255,255,1) 0%,rgba(14,14,14,1) 86%,rgba(14,14,14,1) 100%,rgba(112,112,112,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#707070',GradientType=1 );
+
+    }
+    .box {
+        width: 400px;
+        padding: 20px;
+        border: 3px solid black;
+        color: white;
+        background: rgb(30,87,153);
+        background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(32,124,202,1) 51%, rgba(110,167,211,1) 65%, rgba(125,185,232,1) 100%);
+        background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(110,167,211,1) 65%,rgba(125,185,232,1) 100%);
+        background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(110,167,211,1) 65%,rgba(125,185,232,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+
+
+    }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box-r">
+
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolore natus voluptatem? A ab adipisci at commodi consequatur corporis cum eius enim exercitationem explicabo facere fugit harum hic id, illo iure maxime molestiae molestias nesciunt numquam perferendis placeat praesentium quia quis quisquam quo ratione repellendus soluta unde voluptate. Accusamus atque commodi, consectetur consequatur dolorum ea esse fugiat id ipsam iure maxime minima minus modi nam nemo non numquam obcaecati officia officiis pariatur, perferendis porro possimus quaerat quasi quia quod reiciendis rem sapiente sed sequi tenetur totam ullam unde vero voluptate voluptates voluptatibus. Dignissimos in laboriosam quasi voluptate.
+        </div>
+    </div>
+</body>
+</html>
