@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition</title>
+    <style>
+    body {
+        font: 12px 'Malgun Gothic', sans-serif;
+    }
+    #wrap {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: lime;
+        /*transition: all 3s;*/
+        /*transition: width 3s 1s;*/ /* 속성 duration delay */
+        /*transition-property: width;
+        transition-duration: 3s;
+        transition-delay: 1s;
+        transition-timing-function: linear;*/
+        /* linear | ease | ease-in | ease-out | ease-in-out | steps(n, start|end) */
+        /*transition:
+            width 3s linear,
+            height 1s 3s,
+            background-color 2s 4s;*/
+        /*transition: all 2s;*/
+        /*transition: all 1s ease-in;*/
+        /*transition: all 1s cubic-bezier(0.25, 1.5, 0.75, -0.5);*/
+        transition: all 1s steps(3, end);
+
+
+        /*
+        https://cafe.naver.com/wepub/7582
+        https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function
+         */
+    ;
+    }
+    .box:hover {
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
