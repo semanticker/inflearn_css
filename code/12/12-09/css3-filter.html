@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>filter</title>
+    <style>
+    body {
+        perspective: 1000px;
+        font: 12px 'Malgun Gothic', sans-serif;
+    }
+    #wrap {
+        width: 900px;
+        margin: 0 auto;
+    }
+    #wrap:after {
+        content: '';
+        display: block;;
+    }
+    .filter {
+        float: left;
+        width: 300px;
+        border: 2px solid;
+        box-sizing: border-box;
+    }
+    .filter img {
+        width: 100%;
+        transition: all 1s;
+        cursor: pointer;
+    }
+    .filter.blur img:hover {
+        filter: blur(5px);
+    }
+    .filter.brightness img:hover {
+        filter: brightness(5);
+    }
+    .filter.contrast img:hover {
+        filter: contrast(5);
+    }
+    .filter.drop-shadow img:hover {
+        filter: drop-shadow(-30px 20px 0 rgba(0,0,0,.4));
+    }
+    .filter.grayscale img:hover {
+        filter: grayscale(0.5);
+    }
+    .filter.hue-rotate img:hover {
+        filter: hue-rotate(90deg);
+    }
+    .filter.invert img:hover {
+        filter: invert(.3);
+    }
+    .filter.opacity img:hover {
+        filter: opacity(.2);
+    }
+    .filter.sepia img:hover {
+        filter: sepia(.6);
+    }
+    .filter strong {
+        display: block;
+        padding: .3em .5em;
+    }
+    /*
+    blur()
+    brightness()
+    contrast()
+    drop-shadow()
+    grayscale()
+    hue-rotate()
+    invert()
+    opacity()
+    sepia()
+     */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="filter blur">
+            <img src="img/cherries.jpg" alt="">
+            <strong>blur</strong>
+        </div>
+        <div class="filter brightness">
+            <img src="img/cherries.jpg" alt="">
+            <strong>brightness</strong>
+        </div>
+        <div class="filter contrast">
+            <img src="img/cherries.jpg" alt="">
+            <strong>contrast</strong>
+        </div>
+        <div class="filter drop-shadow">
+            <img src="img/cherries.jpg" alt="">
+            <strong>drop-shadow</strong>
+        </div>
+        <div class="filter grayscale">
+            <img src="img/cherries.jpg" alt="">
+            <strong>grayscale</strong>
+        </div>
+        <div class="filter hue-rotate">
+            <img src="img/cherries.jpg" alt="">
+            <strong>hue-rotate</strong>
+        </div>
+        <div class="filter invert">
+            <img src="img/cherries.jpg" alt="">
+            <strong>invert</strong>
+        </div>
+        <div class="filter opacity">
+            <img src="img/cherries.jpg" alt="">
+            <strong>opacity</strong>
+        </div>
+        <div class="filter sepia">
+            <img src="img/cherries.jpg" alt="">
+            <strong>sepia</strong>
+        </div>
+    </div>
+</body>
+</html>
