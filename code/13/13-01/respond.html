@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>responsible web</title>
+<!--    <link rel="stylesheet" href="css/style.css">-->
+<!--    <link rel="stylesheet" href="css/printer.css" media="printer">-->
+    <style>
+        body {
+            color: #555;
+            font: 12px/1.5 'Trebuchet MS', sans-serif;
+        }
+        #wrap {
+            width: 970px;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        @media screen and (min-width: 1200px){
+            #wrap {
+                width: 1200px;
+            }
+        }
+
+        @media screen and (max-width: 970px) {
+            #wrap {
+                width: auto;
+            }
+        }
+        @media screen and (max-width: 970px) and (min-width: 481px){
+            body {
+                background-color: yellow;
+            }
+        }
+        @media screen and (max-width: 510px) {
+            body {
+                font-size: 14px;
+            }
+        }
+        @media screen and (orientation: portrait) {
+            h1:after{
+                content: ' portrait view';
+                font-size: .8em;
+                color: blue;
+            }
+        }
+        @media screen and (orientation: landscape) {
+            h1:after{
+                content: ' landscape view';
+                font-size: .8em;
+                color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <h1>LOGO</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium expedita incidunt modi non odio omnis perferendis repudiandae vitae. Illo laudantium pariatur qui ratione? Assumenda consequuntur dicta, dignissimos distinctio, dolor doloribus dolorum enim fuga harum ipsa iusto libero nihil placeat quaerat quis recusandae reiciendis rerum sequi similique soluta tenetur vitae voluptates voluptatum! Asperiores cumque doloribus et molestiae molestias nemo pariatur, perspiciatis reiciendis repellat tenetur, totam, velit. Ad alias cupiditate, debitis dignissimos ducimus exercitationem molestiae odit officiis vel voluptas! Alias aliquam consequatur error esse et fuga impedit labore laborum molestiae natus neque obcaecati omnis perferendis, praesentium quidem quos saepe sunt tenetur ullam voluptatibus! Asperiores doloribus eveniet excepturi maxime nam natus recusandae repudiandae soluta suscipit ullam? Ad beatae doloribus eius excepturi expedita fuga, hic illum nesciunt quam quia quisquam, quos, velit voluptatibus! Alias, animi aperiam corporis doloremque dolores, doloribus error est et eum, eveniet ex exercitationem facere fuga incidunt ipsa iste iusto nesciunt nulla perferendis quas recusandae repellendus sint sit temporibus tenetur totam ut vel veniam veritatis vitae? Ab cum debitis delectus dolor dolorem, eos, error et eum explicabo fuga fugiat id incidunt inventore libero molestiae mollitia nisi porro praesentium quaerat quia quod reiciendis repellendus sint totam vitae. Eligendi nemo rem soluta tempore.</p>
+</div>
+
+</body>
+</html>
