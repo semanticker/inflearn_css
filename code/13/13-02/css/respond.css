@@ -1,0 +1,33 @@
+/*
+[40] 미디어쿼리와 반응형 기법 참고
+https://cafe.naver.com/wepub/6924
+
+[41] 반응형 실습 - 완성 모습
+https://cafe.naver.com/wepub/6925
+*/
+
+/* media size */
+@media screen and (max-width: 760px) {
+    #wrap {
+        width: auto;
+    }
+    #footer .btm_menu {
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
+/* small size 320~480px */
+@media screen and (max-width: 480px) {
+    #header {
+        padding-bottom: 0;
+        background-image: none !important;
+    }
+    #header .logo {
+        position: static;
+        backg
+        text-align: center
+    }
+
+}
+
