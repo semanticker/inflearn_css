@@ -96,11 +96,6 @@ hr {
     display: none;
 }
 
-#map {
-    width: 100%;
-    height: 500px;
-}
-
 /* style */
 #wrap {
     max-width: 1200px;
@@ -112,6 +107,7 @@ hr {
     top: 0;
     z-index: 30;
     width: 100%;
+    max-width: 1200px;
     background-color: #000;
 }
 #header .logo {
@@ -155,6 +151,7 @@ hr {
     color: #000;
 }
 #header .lnb {
+    display: none; /* test */
     position: absolute;
     top: 50px;
     width: 100%;
@@ -204,4 +201,158 @@ hr {
 .visual .pic img {
     width: 100%;
     filter: sepia(0.6) grayscale(0.5);
+}
+
+#container {
+    text-align: center;
+}
+
+#container .team {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+#container .team .tle {
+    font-size: 26px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+#container .team .desc {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 30px;
+}
+#container .human {}
+#container .human figure img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+#container .human figcaption {
+    margin-bottom: 20px;
+}
+#container .human figcaption strong {
+    display: block;
+    font-size: 20px;
+    line-height: 50px;
+}
+#container .human figcaption small {
+    display: block;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+#container .pricing {
+    padding: 60px 0;
+    border-bottom: 1px solid #ddd;
+}
+#container .pricing .tle {
+    font-size: 26px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+#container .pricing .desc {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 30px;
+}
+#container .pricing dl {
+    margin: 0 20px 20px;
+    border: 1px solid #ccc;
+}
+#container .pricing dt strong {
+    display: block;
+    background-color: #222;
+    color:#eee;
+    font: 24px/3 'Verdana', sans-serif;
+}
+#container .pricing .pro dt strong {
+    background-color: #444;
+}
+#container .pricing dd li {
+    border-bottom: 1px solid #ccc;
+    font-size: 1.2em;
+    line-height: 50px;
+}
+#container .pricing dd li strong {
+    font-weight: bold;
+    color: #000;
+}
+#container .pricing dd li span {
+    display: block;
+}
+#container .pricing dd li span.pay {
+    padding: 15px 0 0;
+    font-size: 2em;
+}
+#container .pricing dd li span.pay + span {
+    color: #666;
+    font-size: .9em;
+}
+#container .pricing dd .sign {
+    padding: 20px 0;
+    background-color: #f0f0f0;
+}
+#container .pricing dd .sign a {
+    display: inline-block;
+    padding: 0 24px;
+    background-color: #009688;
+    color: #fff;
+    text-decoration: none;
+    line-height: 45px;
+}
+#container .pricing dd .sign a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+#container .pricing dd .sign a i {
+    margin-right: 10px;
+}
+#container .contact {
+    padding: 80px 0 0;
+}
+#container .contact .tle {
+    font-size: 26px;
+    line-height: 60px;
+}
+#container .contact .desc {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 30px;
+}
+#container .contact #map {
+    width: 100%;
+    height: 400px;
+}
+#footer {
+    padding: 30px 0 50px;
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+}
+#footer a {
+    color: #fff;
+}
+#footer .desc{
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+#footer dl {
+    margin-bottom: 15px;
+}
+#footer dd {
+    display: inline;
+}
+#footer dd a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #009688;
+    color: #eee;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 40px;
+}
+#footer dd a:hover {
+    background-color: #ccc;
+    color: #000;
 }
