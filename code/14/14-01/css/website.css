@@ -151,7 +151,6 @@ hr {
     color: #000;
 }
 #header .lnb {
-    display: none; /* test */
     position: absolute;
     top: 50px;
     width: 100%;
